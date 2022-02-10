@@ -1,10 +1,45 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="icon" href="./assets/images/watch-icon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0">
+    <div class="container-md">
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+      <h1 class="mb-0">
+        <a class="navbar-brand logo me-0" href="index.html">Time Traveler</a>
+      </h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-5">
+            <a class="nav-link link-primary text-center text-lg-start" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link link-primary text-center text-lg-start" href="products.html">手錶</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link link-primary text-center text-lg-start" href="login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn">
+        <a class="bi bi-cart-fill fs-4 nav-link link-light" href="cart.html"></a>
+      </button>
+    </div>
+  </nav>
+
+  
 <div class="container-lg">
   <div class="row">
     <img src="https://images.unsplash.com/photo-1558644610-7195359245f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" class="g-0 gx-lg-4 banner-img object-fit-cover">
@@ -162,3 +197,81 @@ current: index
 
 
 <div class="box"></div>
+
+
+  <footer class="footer">
+    <div class="bg-primary text-light py-4">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="d-flex text-white align-items-center col-md-8 col-lg-5 justify-content-center mb-4 mb-lg-0">
+            <i class="bi bi-smartwatch footer-icon me-3 fs-1 text-secondary"></i>
+            <label for="email" class="fs-3 text-nowrap">訂閱 Time Traveler 最新消息</label>
+          </div>
+          <div class="col-md-6 col-lg-5 text-primary">
+            <div class="input-group input-group-lg">
+              <div class="input-group-text bi bi-envelope-fill bg border-0 bg-light rounded-0 text-primary"></div>
+              <input type="email" class="form-control border-0 bg-light" placeholder="" aria-label="email">
+              <button class="btn btn-warning material-icons rounded-0" type="button" >
+                east
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-light text-primary">
+      <div class="container">
+        <div class="row justify-content-center pt-4">
+          <div class="col-md-8 d-flex flex-column">
+            <h4 class="mb-4 mb-md-auto">
+              <a class="navbar-brand logo bg-primary" href="index.html">Time Traveler</a>
+            </h4>
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="tel:+07-1234-5678">
+                  07-1234-5678
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sweetaste@email.com">
+                  timeTraveler@email.com
+                </a>
+              </li>
+              <li>
+                <address class="fs-6">
+                  800 高雄市新興區幸福路 520 號
+                </address>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-md-flex col-md-2 justify-content-md-end mb-4">
+            <h3 class="text-transparent footer-title">
+              <img src="./assets/images/今天是個買錶的好日子.svg" alt="今天是個買錶的好日子">
+              <span class="position-absolute">今天是個買錶的好日子</span>
+            </h3>
+          </div>
+          <div class="col-md-10 d-md-flex justify-content-md-between">
+            <ul class="list-unstyled d-flex mb-4">
+              <li class="me-2">
+                <a href="#">
+                  <i class="bi bi-instagram footer-link-icon link-primary fs-3 lh-1 me-2"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook footer-link-icon link-primary fs-3 lh-1"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text-md-end">© 2022 All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
