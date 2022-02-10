@@ -1,0 +1,58 @@
+.footer-icon {
+  width: 40px;
+}
+.logo {
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('./../images/logo_transparent.png');
+  color: transparent;
+  @include media-breakpoint-up(md) {
+    width: 250px;
+  }
+}
+.navbar {
+  background-color: rgba($primary,0.95);
+}
+.navbar-dark .navbar-brand {
+  color: transparent;
+  &:hover, &:focus {
+    color: transparent;
+  }
+}
+.footer-link-icon{
+  width: 32px;
+}
+.footer-title {
+  width: 60px;
+  @include media-breakpoint-up(md) {
+    width: 80px;
+  }
+}
+.navbar-toggler-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.footer {
+  .navbar-brand {
+    background-position: left center;
+    &:hover, &:focus {
+      color: transparent;
+    }
+  }
+}
+.collapse.show {
+  order: 6;
+}
+.btn-link {
+  .nav-link {
+    color: rgba($primary, .6);
+    &.active {
+      color: $primary;
+    }
+  }
+}
+

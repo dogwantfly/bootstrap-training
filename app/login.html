@@ -1,0 +1,56 @@
+---
+title: 登入
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+<form class="container-md login">
+  <div class="row flex-md-column align-content-md-center section-height justify-content-md-center">
+    <div class="col-md-5 bg-primary">
+      <div class="container text-center">
+        <h2 class="py-4 text-light mb-0 fs-2 fw-semibold">會員登入</h2>
+      </div>
+    </div>
+    <div class="bg-light py-4 order-md-last col-md-5">
+      <h3 class="text-center mb-4 text-info">—— 連結社群帳號 ——</h3>
+      <ul class="container list-unstyled d-flex mb-0 d-md-block social-media text-center">
+        <li class="border-end border-light mb-md-3">
+          <a href="#" class="bg-white py-3 px-2 h-100">
+            <img src="./assets/images/ic-facebook-logotype.svg" alt="facebook logo" class="img-fluid">
+          </a>
+        </li>
+        <li class="border-end border-light mb-md-3">
+          <a href="#" class="bg-white py-3 px-2 h-100">
+            <img src="./assets/images/ic-google.svg" alt="google logo" class=" img-fluid">
+          </a>
+        </li>
+        <li class="border-end border-light">
+          <a href="#" class="bg-white py-3 px-2 h-100">
+            <img src="./assets/images/ic-yahoo.svg" alt="yahoo logo" class=" img-fluid">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-5 bg-primary">
+      <div class="container py-4 px-md-4">
+        <div class="input-group mb-3 input-group-lg">
+          <span class="bi bi-person-fill input-group-text bg-light border-0 text-primary rounded-0 fs-3"></span>
+          <input type="email" class="form-control bg-light border-0 rounded-0 py-3" placeholder="電子信箱" aria-label="email" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group input-group-lg mb-2">
+          <span class="bi bi-key-fill input-group-text bg-light border-0 text-primary rounded-0 fs-3"></span>
+          <input type="password" class="form-control bg-light border-0 rounded-0 py-3" placeholder="請輸入使用者密碼" aria-label="password" aria-describedby="basic-addon1">
+        </div>
+        <div class="form-check text-white">
+          <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            記住我
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 bg-secondary">
+      <button class="btn btn-secondary text-primary rounded-0 fs-4 fw-semibold py-3 w-100" type="submit">登入帳號</button>
+    </div>
+  </div>
+</form>

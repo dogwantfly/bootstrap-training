@@ -1,0 +1,125 @@
+---
+title: 發票
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout-receipt
+---
+<div class="checkout container-md mb-md-6">
+  <form class="row g-0 g-md-4 justify-content-center">
+    <div class="col-md-7 col-lg-6 bg-primary">
+      <div class="shipping-info text-light px-md-4">
+        <div class="d-flex justify-content-between py-4">
+          <h2 class="display-4 fw-semibold">發票</h2>
+          <ol class="progress-bar list-unstyled justify-content-between text-center mb-0 active">
+            <li class="done"></li>
+            <li class="done"></li>
+          </ol>
+        </div>
+        <ul class="nav nav-tabs mb-4 fs-5" id="receiptType" role="tablist">
+          <li class="nav-item w-50 border-light border border-end-0" role="presentation">
+            <button class="nav-link active w-100 rounded-0 py-3" id="electronic-receipt-tab" data-bs-toggle="tab" data-bs-target="#electronicReceipt" type="button" role="tab" aria-controls="electronicReceipt" aria-selected="true">電子發票</button>
+          </li>
+          <li class="nav-item w-50 border-light border border-start-0" role="presentation">
+            <button class="nav-link w-100 rounded-0 py-3" id="receipt-tab" data-bs-toggle="tab" data-bs-target="#receipt" type="button" role="tab" aria-controls="receipt" aria-selected="false">郵寄發票</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="electronicReceipt" role="tabpanel" aria-labelledby="electronicReceipt">
+            <div class="mb-4">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="input-card" class="form-label">電子郵件信箱</label>
+                  <input type="email" class="form-control border-0" id="input-card" placeholder="example@email.com">
+                </div>
+                <div class="col-12">
+                  <label for="input-id" class="form-label">統一編號（選填）</label>
+                  <input type="number" class="form-control border-0" id="input-id" placeholder="12345678">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="receipt" role="tabpanel" aria-labelledby="receipt">
+            <div class="row mb-3">
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">地址</label>
+              </div>
+              <div class="col-6 mb-2">
+                <select id="inputCounty" class="form-select text-info">
+                  <option selected >高雄市</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-6 mb-2">
+                <select id="inputState" class="form-select text-info">
+                  <option selected>新興區</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" id="inputAddress" placeholder="幸福路 520 號">
+              </div>
+            </div>
+            <label for="input-id" class="form-label">統一編號（選填）</label>
+            <input type="number" class="form-control border-0" id="input-id" placeholder="12345678">
+          </div>
+        </div>
+      </div>
+      <a href="checkout-success.html" class="btn btn-secondary w-100 rounded-0 text-primary fs-3 fw-semibold bottom-0 start-0 d-none d-md-block">下一步</a>
+    </div>
+    <a href="checkout-success.html" class="btn btn-secondary w-100 rounded-0 text-primary fs-3 fw-semibold bottom-0 start-0 d-md-none">下一步</a>
+    <div class="col-md-5 col-lg-4 d-none d-md-block">
+      <div class="text-info">
+        <h2 class="text-center py-3 mb-4 bg-light">訂單摘要</h2>
+        <dl class="row fw-light mb-md-0 px-3">
+          <dt class="col-6 fw-light">小計</dt>
+          <dd class="col-6 text-end">$2700</dd>
+        
+          <dt class="col-6 fw-light">運費</dt>
+          <dd class="col-6 text-end">$300</dd>
+        
+          <dt class="col-6 fw-semibold fs-4">總計</dt>
+          <dd class="col-6 fw-semibold text-end fs-4">$3000</dd>
+        </dl>
+      </div>
+      <div class="text-info">
+        <h2 class="text-center py-3 mb-4 bg-light">購物清單</h2>
+        <ul class="list-unstyled container">
+          <li class="row align-items-center mb-3">
+            <div class="col-5">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/cart-1.jpg" alt="makaron" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="col-7">
+              <h3 class="fs-6">焦糖馬卡龍（2）</h3>
+              <p class="fs-4 fw-semibold">NT$900</p>
+            </div>
+          </li>
+          <li class="row align-items-center mb-3">
+            <div class="col-5">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/cart-1.jpg" alt="makaron" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="col-7">
+              <h3 class="fs-6">焦糖馬卡龍（2）</h3>
+              <p class="fs-4 fw-semibold">NT$900</p>
+            </div>
+          </li>
+          <li class="row align-items-center mb-3">
+            <div class="col-5">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/cart-1.jpg" alt="makaron" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="col-7">
+              <h3 class="fs-6">焦糖馬卡龍（2）</h3>
+              <p class="fs-4 fw-semibold">NT$900</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</div>
+

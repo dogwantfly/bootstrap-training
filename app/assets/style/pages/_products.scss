@@ -1,0 +1,17 @@
+.bg-products-title {
+  background-image: url('./../images/light-收藏好錶是不需要理由的.svg');
+  background-position: center top;
+}
+.sidebar {
+  .nav-item {
+    border: 1px solid $light;
+    border-top: 0;
+  }
+  &.navbar-nav  {
+    .nav-link {
+      &:hover, &.active {
+        background-color: $light;
+      }
+    }
+  }
+}

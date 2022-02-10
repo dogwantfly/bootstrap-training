@@ -1,0 +1,114 @@
+---
+title: 購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: cart
+---
+<h2 class="bg-light text-primary text-center py-3 mb-4 d-md-none">您的購物車</h2>
+<div class="container py-lg-6">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="bg-light text-primary text-center py-3 mb-4 d-none d-md-block">您的購物車</h2>
+      <ul class="list-unstyled text-primary">
+        <li class="mb-4">
+          <div class="d-flex mb-2 justify-content-md-between justify-content-lg-start">
+            <div class="col-6 col-lg-2 me-3">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/louis-mornaud-ADvixEYm5qE-unsplash.jpg" alt="靜謐藍優雅手錶" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="fw-light d-lg-flex align-items-lg-center text-md-end text-lg-start justify-content-lg-between cart-detail">
+              <div class="cart-detail-text">
+                <h3 class="fw-light fs-5">靜謐藍優雅手錶</h3>
+                <p>$ 1638</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-light text-primary fw-light">
+                  +
+                </button>
+                <span class="btn btn-outline-light text-primary fw-light">2</span>
+                <button type="button" class="btn btn-outline-light text-primary fw-light">-</button>
+              </div>
+              <p class="text-end fs-4 fw-semibold d-none d-lg-block mb-0">$ 3276</p>
+              <button type="button" class="btn btn-outline-primary border-0 d-none d-lg-block"><i class="bi bi-trash-fill"></i></button>
+            </div>
+            
+          </div>
+          <p class="text-end border-top border-bottom border-light py-2 fs-4 fw-semibold d-lg-none">$ 3276</p>
+        </li>
+        <li class="mb-4">
+          <div class="d-flex mb-2 justify-content-md-between justify-content-lg-start">
+            <div class="col-6 col-lg-2 me-3">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/bruno-van-der-kraan-VRERJ5Mjp4c-unsplash.jpg" alt="多功能三眼機械手錶" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="fw-light d-lg-flex align-items-lg-center text-md-end text-lg-start justify-content-lg-between cart-detail">
+              <div class="cart-detail-text">
+                <h3 class="fw-light fs-5">多功能三眼機械手錶</h3>
+                <p>$ 3290</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-light text-primary fw-light">
+                  +
+                </button>
+                <span class="btn btn-outline-light text-primary fw-light">1</span>
+                <button type="button" class="btn btn-outline-light text-primary fw-light">-</button>
+              </div>
+              <p class="text-end fs-4 fw-semibold d-none d-lg-block mb-0">$ 3290</p>
+              <button type="button" class="btn btn-outline-primary border-0 d-none d-lg-block"><i class="bi bi-trash-fill"></i></button>
+            </div>
+            
+          </div>
+          <p class="text-end border-top border-bottom border-light py-2 fs-4 fw-semibold d-lg-none">$ 3290</p>
+        </li>
+        <li class="mb-4">
+          <div class="d-flex mb-2 justify-content-md-between justify-content-lg-start">
+            <div class="col-6 col-lg-2 me-3">
+              <div class="ratio ratio-4x3">
+                <img src="./assets/images/mambawatches-ukJdqKqFcDA-unsplash.jpg" alt="木紋金屬腕錶" class="object-fit-cover">
+              </div>
+            </div>
+            <div class="fw-light d-lg-flex align-items-lg-center text-md-end text-lg-start justify-content-lg-between cart-detail">
+              <div class="cart-detail-text">
+                <h3 class="fw-light fs-5">木紋金屬腕錶</h3>
+                <p>$ 2998</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-light text-primary fw-light">
+                  +
+                </button>
+                <span class="btn btn-outline-light text-primary fw-light">1</span>
+                <button type="button" class="btn btn-outline-light text-primary fw-light">-</button>
+              </div>
+              <p class="text-end fs-4 fw-semibold d-none d-lg-block mb-0">$ 2998</p>
+              <button type="button" class="btn btn-outline-primary border-0 d-none d-lg-block"><i class="bi bi-trash-fill"></i></button>
+            </div>
+            
+          </div>
+          <p class="text-end border-top border-bottom border-light py-2 fs-4 fw-semibold d-lg-none">$ 2998</p>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="order-summary">
+        <h2 class="text-center py-3 mb-4">訂單摘要</h2>
+        <dl class="row fw-light mb-md-0 px-3">
+          <dt class="col-6 fw-light">小計</dt>
+          <dd class="col-6 text-end">$ 9564</dd>
+        
+          <dt class="col-6 fw-light">運費</dt>
+          <dd class="col-6 text-end">$ 60</dd>
+        
+          <dt class="col-6 fw-semibold fs-4">總計</dt>
+          <dd class="col-6 fw-semibold text-end fs-4">$ 9624</dd>
+        </dl>
+      </div>
+      <a href="checkout-shipping.html" class="btn btn-secondary w-100 text-primary py-3 fs-4 fw-semibold d-none d-md-block rounded-0">結帳</a>
+    </div>
+  </div>
+</div>
+<a href="checkout-shipping.html" class="btn btn-secondary w-100 text-primary py-3 fs-4 fw-semibold d-md-none rounded-0">結帳</a>
+
+

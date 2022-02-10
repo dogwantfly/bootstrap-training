@@ -1,0 +1,29 @@
+.text-vertical {
+    writing-mode: vertical-rl;
+}
+@include media-breakpoint-up(md) {
+  .text-md-vertical {
+      writing-mode: vertical-rl;
+  }
+  .bg-md-transparent {
+      background-color: transparent !important;
+  }
+}
+.bg-secondary {
+  background-color: #FFE180;
+}
+
+.text-transparent {
+  color: transparent;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+.text-md-pre-line {
+  @include media-breakpoint-up(md) {
+    white-space: pre-line;
+  }
+}
+.fw-semibold {
+  font-weight: $font-weight-semibold;
+}

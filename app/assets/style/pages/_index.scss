@@ -1,0 +1,146 @@
+.banner-img {
+  height: calc(100vh - 500px);
+}
+@include media-breakpoint-up(lg) {
+  .position-menu {
+    position: relative;
+    top: -90px;
+  }
+}
+.tag{
+  position: absolute;
+  left: 30px;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5rem;
+  padding: 10.5px;
+}
+.product-icon{
+  position: absolute;
+  right: 25px;
+  top: 19px;
+  color: $primary;
+}
+.card-img{
+  height: 315px;
+  object-fit: cover;
+}
+.menu-item {
+  z-index: 1;
+  a {
+    color: $white;
+    letter-spacing: 0.25rem;
+    font-weight: bold;
+    transition: all 0.5s;
+    padding: 3rem 0;
+    &:hover {
+      color: $primary;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 5.25rem 0;
+      font-size: 1.5rem;
+    }
+  }
+  &.active {
+    a {
+      color: $primary;
+    }
+  }
+}
+.background-img-1 {
+  background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8QWhHNUUwY29wSm98fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+}
+.background-img-2 {
+  background-image: url('https://images.unsplash.com/photo-1526075574807-4569192a50a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxBaEc1RTBjb3BKb3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+}
+.background-img-3 {
+  background-image: url('https://images.unsplash.com/photo-1556597130-ef7aa3c71ff5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80');
+}
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backdrop-filter{
+  position: relative;
+  &:hover::before {
+    background-color: rgba($secondary, 0.75);
+  }
+  &::before {
+    transition: all 0.5s;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+    background-color: rgba($primary, 0.85);
+  }
+  &.active::before {
+    background-color: rgba($secondary, 0.75);
+  }
+}
+.bg-title-1 {
+  background-image: url('./../images/sm-為什麼一定要擁有手錶.svg');
+  font-size: 2rem;
+  @include media-breakpoint-up(md) {
+    background-image: url('./../images/為什麼一定要擁有手錶.svg');
+    background-position: center top;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
+}
+.bg-title-2 {
+  background-image: url('./../images/sm-為什麼需要戴手錶.svg');
+  font-size: 2rem;
+  @include media-breakpoint-up(md) {
+    background-image: url('./../images/為什麼需要戴手錶.svg');
+    background-position: center top;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
+}
+.bg-title-3 {
+  font-size: 2rem;
+  background-image: url('./../images/sm-收藏好錶是不需要理由的.svg');
+  @include media-breakpoint-up(md) {
+    background-image: url('./../images/收藏好錶是不需要理由的.svg');
+    background-position: center top;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
+}
+.products {
+  .card-text {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .btn-light {
+    color: $primary;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.intro {
+  li + li {
+    margin-top: 35px;
+    @include media-breakpoint-up(md) {
+      margin-top: 105px;
+    }
+  }
+  .card-header {
+    @include media-breakpoint-up(md) {
+      position: relative;
+      top: -1.5rem;
+    }
+  }
+  .ratio {
+    @include media-breakpoint-up(md) {
+      margin: -1.5rem 0;
+    }
+  }
+}

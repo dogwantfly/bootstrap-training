@@ -1,0 +1,16 @@
+.text-hide {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+}
+.bg-center {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

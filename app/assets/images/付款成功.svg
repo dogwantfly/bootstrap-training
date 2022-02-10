@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="147" viewBox="0 0 430 147">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="93" y="328" width="430" height="147" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_3" data-name="Scroll Group 3" transform="translate(-93 -328)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <text id="付款成功" transform="translate(107 436)" fill="#707070" font-size="99" font-family="STHeitiTC-Medium, Heiti TC" font-weight="500"><tspan x="0" y="0">付款成功</tspan></text>
+  </g>
+</svg>
