@@ -81,9 +81,11 @@
     background-color: rgba($secondary, 0.75);
   }
 }
-.bg-title-1 {
-  background-image: url('./../images/sm-為什麼一定要擁有手錶.svg');
+.title-mobile {
   font-size: 2rem;
+  color: $primary;
+}
+.bg-title-1 {
   @include media-breakpoint-up(md) {
     background-image: url('./../images/為什麼一定要擁有手錶.svg');
     background-position: center top;
@@ -93,8 +95,6 @@
   }
 }
 .bg-title-2 {
-  background-image: url('./../images/sm-為什麼需要戴手錶.svg');
-  font-size: 2rem;
   @include media-breakpoint-up(md) {
     background-image: url('./../images/為什麼需要戴手錶.svg');
     background-position: center top;
@@ -104,8 +104,6 @@
   }
 }
 .bg-title-3 {
-  font-size: 2rem;
-  background-image: url('./../images/sm-收藏好錶是不需要理由的.svg');
   @include media-breakpoint-up(md) {
     background-image: url('./../images/收藏好錶是不需要理由的.svg');
     background-position: center top;
@@ -127,7 +125,6 @@
 }
 .intro {
   li + li {
-    margin-top: 35px;
     @include media-breakpoint-up(md) {
       margin-top: 105px;
     }
